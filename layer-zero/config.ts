@@ -1,0 +1,2 @@
+Deployed contract: MyOAppRead, network: base-sepolia-testnet, address: 0xF08F1cD780A02ADB4CDD5311215311034a89666C
+Deployed contract: MyOAppRead, network: sepolia-testnet, address: 0x65054b0218D0B492287c0212399E6B05c1a43efB
