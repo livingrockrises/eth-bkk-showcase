@@ -89,6 +89,9 @@ contract TokenPaymasterWithPYTH is BasePaymasterCustom, ReentrancyGuard {
         unaccountedGas = unaccountedGasArg;
     }
 
+
+    receive() external payable {}
+
     /**
      * @dev pull tokens out of paymaster in case they were sent to the paymaster at any point.
      * @param token the token deposit to withdraw

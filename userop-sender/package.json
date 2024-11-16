@@ -1,0 +1,29 @@
+{
+  "name": "userop-sender",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@biconomy/sdk": "^0.0.8",
+    "@pythnetwork/pyth-evm-js": "^1.76.0",
+    "@rhinestone/module-sdk": "^0.1.28",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "ts-node": "^10.9.2",
+    "viem": "^2.21.45"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@silencelaboratories/walletprovider-sdk": "^0.3.0",
+    "@types/node": "^20",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.14",
+    "typescript": "^5"
+  }
+}
