@@ -1,0 +1,13 @@
+.env*
+
+node_modules
+
+DS_Store
+
+artifacts/
+
+cache/
+
+coverage
+
+logs
