@@ -202,6 +202,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IStakeManager__factory>;
     getContractFactory(
+      name: "BlueChipNFT",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.BlueChipNFT__factory>;
+    getContractFactory(
       name: "SolvingPaymaster",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.SolvingPaymaster__factory>;
@@ -229,6 +233,14 @@ declare module "hardhat/types/runtime" {
       name: "BasePaymasterCustom",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.BasePaymasterCustom__factory>;
+    getContractFactory(
+      name: "IL1Blocks",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IL1Blocks__factory>;
+    getContractFactory(
+      name: "ScrollPaymaster",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.ScrollPaymaster__factory>;
     getContractFactory(
       name: "SolvingPaymaster",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -490,6 +502,11 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.IStakeManager>;
     getContractAt(
+      name: "BlueChipNFT",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.BlueChipNFT>;
+    getContractAt(
       name: "SolvingPaymaster",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
@@ -524,6 +541,16 @@ declare module "hardhat/types/runtime" {
       address: string | ethers.Addressable,
       signer?: ethers.Signer
     ): Promise<Contracts.BasePaymasterCustom>;
+    getContractAt(
+      name: "IL1Blocks",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IL1Blocks>;
+    getContractAt(
+      name: "ScrollPaymaster",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.ScrollPaymaster>;
     getContractAt(
       name: "SolvingPaymaster",
       address: string | ethers.Addressable,
@@ -744,6 +771,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.IStakeManager>;
     deployContract(
+      name: "BlueChipNFT",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.BlueChipNFT>;
+    deployContract(
       name: "SolvingPaymaster",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.SolvingPaymaster>;
@@ -771,6 +802,14 @@ declare module "hardhat/types/runtime" {
       name: "BasePaymasterCustom",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.BasePaymasterCustom>;
+    deployContract(
+      name: "IL1Blocks",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IL1Blocks>;
+    deployContract(
+      name: "ScrollPaymaster",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.ScrollPaymaster>;
     deployContract(
       name: "SolvingPaymaster",
       signerOrOptions?: ethers.Signer | DeployContractOptions
@@ -1032,6 +1071,11 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.IStakeManager>;
     deployContract(
+      name: "BlueChipNFT",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.BlueChipNFT>;
+    deployContract(
       name: "SolvingPaymaster",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
@@ -1066,6 +1110,16 @@ declare module "hardhat/types/runtime" {
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.BasePaymasterCustom>;
+    deployContract(
+      name: "IL1Blocks",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IL1Blocks>;
+    deployContract(
+      name: "ScrollPaymaster",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.ScrollPaymaster>;
     deployContract(
       name: "SolvingPaymaster",
       args: any[],

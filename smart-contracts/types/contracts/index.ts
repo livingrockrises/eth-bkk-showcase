@@ -11,4 +11,5 @@ import type * as paymasters from "./paymasters";
 export type { paymasters };
 import type * as utils from "./utils";
 export type { utils };
+export type { BlueChipNFT } from "./BlueChipNFT";
 export type { NFTPurchase } from "./NFTPurchase";
