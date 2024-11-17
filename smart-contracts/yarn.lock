@@ -815,11 +815,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@layerzerolabs/lz-evm-protocol-v2@npm:^3.0.15":
+  version: 3.0.15
+  resolution: "@layerzerolabs/lz-evm-protocol-v2@npm:3.0.15"
+  peerDependencies:
+    "@openzeppelin/contracts": ^4.8.1 || ^5.0.0
+    "@openzeppelin/contracts-upgradeable": ^4.8.1 || ^5.0.0
+    hardhat-deploy: ^0.12.4
+    solidity-bytes-utils: ^0.8.0
+  checksum: 10/3d207c74677fe8e9926c45318f0b72449ffcafb51ac4824225a77b6d1937c53f05fee4067095cd3f8dcf0041fd2b0d03cabbf756d08aa3842049bb03ee0274d4
+  languageName: node
+  linkType: hard
+
+"@layerzerolabs/oapp-evm@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@layerzerolabs/oapp-evm@npm:0.2.0"
+  dependencies:
+    ethers: "npm:^5.7.2"
+  peerDependencies:
+    "@layerzerolabs/lz-evm-messagelib-v2": ^3.0.12
+    "@layerzerolabs/lz-evm-protocol-v2": ^3.0.12
+    "@layerzerolabs/lz-evm-v1-0.7": ^3.0.12
+    "@openzeppelin/contracts": ^4.8.1 || ^5.0.0
+    "@openzeppelin/contracts-upgradeable": ^4.8.1 || ^5.0.0
+  checksum: 10/96cc63f48e6d8c547143459d567cfc3fb945b7762a70c987613da9b97d2b5b429b19716cd1017cf0f4b096c3cfb06588288d96b12779a6f346bb1edf87f8ffa0
+  languageName: node
+  linkType: hard
+
 "@livingrockrises/bkk-smart-contracts@workspace:.":
   version: 0.0.0-use.local
   resolution: "@livingrockrises/bkk-smart-contracts@workspace:."
   dependencies:
     "@ethersproject/bignumber": "npm:^5.7.0"
+    "@layerzerolabs/lz-evm-protocol-v2": "npm:^3.0.15"
+    "@layerzerolabs/oapp-evm": "npm:^0.2.0"
     "@nomicfoundation/hardhat-chai-matchers": "npm:^2.0.7"
     "@nomicfoundation/hardhat-ethers": "npm:^3.0.8"
     "@nomicfoundation/hardhat-foundry": "npm:^1.1.2"
@@ -4114,7 +4143,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ethers@npm:^5.5.1, ethers@npm:^5.5.3, ethers@npm:^5.7.0, ethers@npm:^5.7.1, ethers@npm:~5.7.0":
+"ethers@npm:^5.5.1, ethers@npm:^5.5.3, ethers@npm:^5.7.0, ethers@npm:^5.7.1, ethers@npm:^5.7.2, ethers@npm:~5.7.0":
   version: 5.7.2
   resolution: "ethers@npm:5.7.2"
   dependencies:

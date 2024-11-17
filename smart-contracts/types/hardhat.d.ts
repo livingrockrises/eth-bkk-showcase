@@ -14,6 +14,74 @@ import * as Contracts from ".";
 declare module "hardhat/types/runtime" {
   interface HardhatEthersHelpers extends HardhatEthersHelpersBase {
     getContractFactory(
+      name: "ILayerZeroEndpointV2",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.ILayerZeroEndpointV2__factory>;
+    getContractFactory(
+      name: "ILayerZeroReceiver",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.ILayerZeroReceiver__factory>;
+    getContractFactory(
+      name: "IMessageLibManager",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IMessageLibManager__factory>;
+    getContractFactory(
+      name: "IMessagingChannel",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IMessagingChannel__factory>;
+    getContractFactory(
+      name: "IMessagingComposer",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IMessagingComposer__factory>;
+    getContractFactory(
+      name: "IMessagingContext",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IMessagingContext__factory>;
+    getContractFactory(
+      name: "AddressCast",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.AddressCast__factory>;
+    getContractFactory(
+      name: "IOAppCore",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IOAppCore__factory>;
+    getContractFactory(
+      name: "IOAppMapper",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IOAppMapper__factory>;
+    getContractFactory(
+      name: "IOAppReceiver",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IOAppReceiver__factory>;
+    getContractFactory(
+      name: "IOAppReducer",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IOAppReducer__factory>;
+    getContractFactory(
+      name: "ReadCodecV1",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.ReadCodecV1__factory>;
+    getContractFactory(
+      name: "OApp",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.OApp__factory>;
+    getContractFactory(
+      name: "OAppCore",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.OAppCore__factory>;
+    getContractFactory(
+      name: "OAppRead",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.OAppRead__factory>;
+    getContractFactory(
+      name: "OAppReceiver",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.OAppReceiver__factory>;
+    getContractFactory(
+      name: "OAppSender",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.OAppSender__factory>;
+    getContractFactory(
       name: "Ownable",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Ownable__factory>;
@@ -86,6 +154,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Math__factory>;
     getContractFactory(
+      name: "SafeCast",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.SafeCast__factory>;
+    getContractFactory(
       name: "ReentrancyGuard",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.ReentrancyGuard__factory>;
@@ -130,6 +202,18 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IStakeManager__factory>;
     getContractFactory(
+      name: "SolvingPaymaster",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.SolvingPaymaster__factory>;
+    getContractFactory(
+      name: "TimelockVault",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.TimelockVault__factory>;
+    getContractFactory(
+      name: "Verifier",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Verifier__factory>;
+    getContractFactory(
       name: "Errors",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Errors__factory>;
@@ -171,6 +255,91 @@ declare module "hardhat/types/runtime" {
     ): Promise<Contracts.SafeTransferLib__factory>;
 
     getContractAt(
+      name: "ILayerZeroEndpointV2",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.ILayerZeroEndpointV2>;
+    getContractAt(
+      name: "ILayerZeroReceiver",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.ILayerZeroReceiver>;
+    getContractAt(
+      name: "IMessageLibManager",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IMessageLibManager>;
+    getContractAt(
+      name: "IMessagingChannel",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IMessagingChannel>;
+    getContractAt(
+      name: "IMessagingComposer",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IMessagingComposer>;
+    getContractAt(
+      name: "IMessagingContext",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IMessagingContext>;
+    getContractAt(
+      name: "AddressCast",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.AddressCast>;
+    getContractAt(
+      name: "IOAppCore",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IOAppCore>;
+    getContractAt(
+      name: "IOAppMapper",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IOAppMapper>;
+    getContractAt(
+      name: "IOAppReceiver",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IOAppReceiver>;
+    getContractAt(
+      name: "IOAppReducer",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IOAppReducer>;
+    getContractAt(
+      name: "ReadCodecV1",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.ReadCodecV1>;
+    getContractAt(
+      name: "OApp",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.OApp>;
+    getContractAt(
+      name: "OAppCore",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.OAppCore>;
+    getContractAt(
+      name: "OAppRead",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.OAppRead>;
+    getContractAt(
+      name: "OAppReceiver",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.OAppReceiver>;
+    getContractAt(
+      name: "OAppSender",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.OAppSender>;
+    getContractAt(
       name: "Ownable",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
@@ -261,6 +430,11 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.Math>;
     getContractAt(
+      name: "SafeCast",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.SafeCast>;
+    getContractAt(
       name: "ReentrancyGuard",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
@@ -315,6 +489,21 @@ declare module "hardhat/types/runtime" {
       address: string | ethers.Addressable,
       signer?: ethers.Signer
     ): Promise<Contracts.IStakeManager>;
+    getContractAt(
+      name: "SolvingPaymaster",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.SolvingPaymaster>;
+    getContractAt(
+      name: "TimelockVault",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.TimelockVault>;
+    getContractAt(
+      name: "Verifier",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Verifier>;
     getContractAt(
       name: "Errors",
       address: string | ethers.Addressable,
@@ -367,6 +556,74 @@ declare module "hardhat/types/runtime" {
     ): Promise<Contracts.SafeTransferLib>;
 
     deployContract(
+      name: "ILayerZeroEndpointV2",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.ILayerZeroEndpointV2>;
+    deployContract(
+      name: "ILayerZeroReceiver",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.ILayerZeroReceiver>;
+    deployContract(
+      name: "IMessageLibManager",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IMessageLibManager>;
+    deployContract(
+      name: "IMessagingChannel",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IMessagingChannel>;
+    deployContract(
+      name: "IMessagingComposer",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IMessagingComposer>;
+    deployContract(
+      name: "IMessagingContext",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IMessagingContext>;
+    deployContract(
+      name: "AddressCast",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.AddressCast>;
+    deployContract(
+      name: "IOAppCore",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IOAppCore>;
+    deployContract(
+      name: "IOAppMapper",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IOAppMapper>;
+    deployContract(
+      name: "IOAppReceiver",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IOAppReceiver>;
+    deployContract(
+      name: "IOAppReducer",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IOAppReducer>;
+    deployContract(
+      name: "ReadCodecV1",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.ReadCodecV1>;
+    deployContract(
+      name: "OApp",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.OApp>;
+    deployContract(
+      name: "OAppCore",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.OAppCore>;
+    deployContract(
+      name: "OAppRead",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.OAppRead>;
+    deployContract(
+      name: "OAppReceiver",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.OAppReceiver>;
+    deployContract(
+      name: "OAppSender",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.OAppSender>;
+    deployContract(
       name: "Ownable",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.Ownable>;
@@ -439,6 +696,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.Math>;
     deployContract(
+      name: "SafeCast",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.SafeCast>;
+    deployContract(
       name: "ReentrancyGuard",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.ReentrancyGuard>;
@@ -482,6 +743,18 @@ declare module "hardhat/types/runtime" {
       name: "IStakeManager",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.IStakeManager>;
+    deployContract(
+      name: "SolvingPaymaster",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.SolvingPaymaster>;
+    deployContract(
+      name: "TimelockVault",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.TimelockVault>;
+    deployContract(
+      name: "Verifier",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.Verifier>;
     deployContract(
       name: "Errors",
       signerOrOptions?: ethers.Signer | DeployContractOptions
@@ -524,6 +797,91 @@ declare module "hardhat/types/runtime" {
     ): Promise<Contracts.SafeTransferLib>;
 
     deployContract(
+      name: "ILayerZeroEndpointV2",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.ILayerZeroEndpointV2>;
+    deployContract(
+      name: "ILayerZeroReceiver",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.ILayerZeroReceiver>;
+    deployContract(
+      name: "IMessageLibManager",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IMessageLibManager>;
+    deployContract(
+      name: "IMessagingChannel",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IMessagingChannel>;
+    deployContract(
+      name: "IMessagingComposer",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IMessagingComposer>;
+    deployContract(
+      name: "IMessagingContext",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IMessagingContext>;
+    deployContract(
+      name: "AddressCast",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.AddressCast>;
+    deployContract(
+      name: "IOAppCore",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IOAppCore>;
+    deployContract(
+      name: "IOAppMapper",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IOAppMapper>;
+    deployContract(
+      name: "IOAppReceiver",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IOAppReceiver>;
+    deployContract(
+      name: "IOAppReducer",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.IOAppReducer>;
+    deployContract(
+      name: "ReadCodecV1",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.ReadCodecV1>;
+    deployContract(
+      name: "OApp",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.OApp>;
+    deployContract(
+      name: "OAppCore",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.OAppCore>;
+    deployContract(
+      name: "OAppRead",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.OAppRead>;
+    deployContract(
+      name: "OAppReceiver",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.OAppReceiver>;
+    deployContract(
+      name: "OAppSender",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.OAppSender>;
+    deployContract(
       name: "Ownable",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
@@ -614,6 +972,11 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.Math>;
     deployContract(
+      name: "SafeCast",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.SafeCast>;
+    deployContract(
       name: "ReentrancyGuard",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
@@ -668,6 +1031,21 @@ declare module "hardhat/types/runtime" {
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.IStakeManager>;
+    deployContract(
+      name: "SolvingPaymaster",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.SolvingPaymaster>;
+    deployContract(
+      name: "TimelockVault",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.TimelockVault>;
+    deployContract(
+      name: "Verifier",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.Verifier>;
     deployContract(
       name: "Errors",
       args: any[],

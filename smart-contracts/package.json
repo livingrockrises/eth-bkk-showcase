@@ -30,6 +30,8 @@
     "verify": "hardhat run scripts/verify.ts --network"
   },
   "dependencies": {
+    "@layerzerolabs/lz-evm-protocol-v2": "^3.0.15",
+    "@layerzerolabs/oapp-evm": "^0.2.0",
     "@pythnetwork/pyth-sdk-solidity": "^4.0.0",
     "@types/snarkjs": "^0.7.8",
     "account-abstraction": "github:eth-infinitism/account-abstraction#develop",

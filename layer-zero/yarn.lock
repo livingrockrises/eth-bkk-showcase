@@ -765,7 +765,7 @@
     table "~6.8.2"
     winston "^3.11.0"
 
-"@layerzerolabs/lz-definitions@^3.0.12":
+"@layerzerolabs/lz-definitions@^3.0.12", "@layerzerolabs/lz-definitions@^3.0.15":
   version "3.0.15"
   resolved "https://registry.npmjs.org/@layerzerolabs/lz-definitions/-/lz-definitions-3.0.15.tgz"
   integrity sha512-I4cFKFz2QuUkegS9lCzTeKmqbK1Nxy4ncujFmf4nQGdo0EScqkE8Hj2izV/v0TLsTSwpIc7uyi3tEP61a9GXxw==

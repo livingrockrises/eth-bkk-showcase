@@ -3,6 +3,7 @@
 /* eslint-disable */
 export * as lockSol from "./Lock.sol";
 export * as timeLockVaultSol from "./TimeLockVault.sol";
+export * as enchantingSpend from "./enchanting-spend";
 export * as paymasters from "./paymasters";
 export * as utils from "./utils";
 export { NFTPurchase__factory } from "./NFTPurchase__factory";
