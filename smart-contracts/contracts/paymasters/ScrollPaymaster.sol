@@ -42,10 +42,23 @@ address constant L1_BLOCKS_ADDRESS = 0x5300000000000000000000000000000000000001;
         return l1BlockNum;
     }
 
+    function updateSlotToRead(uint256 _slotToRead) public onlyOwner {
+        slotToRead = _slotToRead;
+    }
+
     // Returns the number read from L1
-    function retrieveFromL1() internal view returns(uint) {
+    function retrieveFromL1(address _user) internal view returns(uint) {
+        uint mappingArraySlot = uint(
+            keccak256(
+                abi.encodePacked(
+                    keccak256(abi.encodePacked(_user,
+                    uint256(0))
+                )
+            )
+        )) + 0;
+
         // The precompile expects the contract address number and an array of slots. In this case we only query one, the slot 0
-        bytes memory input = abi.encodePacked(nft, slotToRead);
+        bytes memory input = abi.encodePacked(nft, mappingArraySlot);
         bool success;
         bytes memory ret;
         // We can access any piece of state of L1 through a staticcall, this makes it simple and cheap
@@ -60,7 +73,7 @@ address constant L1_BLOCKS_ADDRESS = 0x5300000000000000000000000000000000000001;
     internal view override returns (bytes memory context, uint256 validationData) {
         (requiredPreFund);
         // check if user holds the nft
-        uint256 balance = retrieveFromL1();
+        uint256 balance = retrieveFromL1(userOp.sender);
         if (balance > 0) {
             return (bytes(""), 0);
         }
